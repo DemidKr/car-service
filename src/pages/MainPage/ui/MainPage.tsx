@@ -1,11 +1,11 @@
 import React from 'react';
+import {Hero} from "widgets/Hero";
 
 const MainPage = () => {
     return (
-        <div>
-
-            MainPage
-        </div>
+        <>
+            <Hero/>
+        </>
     );
 };
 
