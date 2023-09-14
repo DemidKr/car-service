@@ -1,0 +1,18 @@
+.InfoBox {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: var(--info-text-color);
+    font: var(--font-info);
+    font-weight: 500;
+
+    &__title {
+      font-weight: 400
+    }
+  }
+}

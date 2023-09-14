@@ -1,0 +1,6 @@
+$roboto-font-path: "../../shared/assets/fonts";
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), url("#{$roboto-font-path}/Inter-VariableFont_slnt,wght.ttf") format('truetype');
+}

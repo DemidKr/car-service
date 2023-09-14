@@ -1,8 +1,11 @@
 import React, {FC} from 'react';
 import {classNames} from "shared/lib/classNames";
 import cls from './Navbar.module.scss'
-import {AppLink, AppLinkTheme} from "shared/ui/AppLink";
-import {ThemeSwitcher} from "shared/ui/ThemeSwitcher";
+import {InfoBox} from "shared/ui/InfoBox";
+import ClockIcon from "shared/assets/icons/clock.svg";
+import PhoneIcon from "shared/assets/icons/phone.svg";
+import PinIcon from "shared/assets/icons/pin.svg";
+import logo from "shared/assets/icons/logo.png"
 
 interface NavbarProps {
     className?: string;
@@ -12,13 +15,41 @@ export const Navbar: FC<NavbarProps> = (props) => {
     const {className, ...otherProps} = props
 
     return (
-        <div className={classNames(cls.Navbar, {}, [])}>
-            <ThemeSwitcher/>
-            <div className={cls.links}>
-                <AppLink theme={AppLinkTheme.SECONDARY} to={'/'} className={cls.mainLink}>Main</AppLink>
-                <AppLink theme={AppLinkTheme.SECONDARY} to={'/about'}>About</AppLink>
+        <nav className={classNames(cls.Navbar, {}, [className])}>
+            <div className={cls.Navbar__wrapper}>
+                <div className={cls.Navbar__row}>
+                    <div className={cls.Navbar__row__left}>
+                        <InfoBox
+                            title={'График работы:'}
+                            desc={'ст. Кущевская, ул. Октябрьская 1Г'}
+                            svgIcon={<PinIcon className={cls.Navbar__icon}/>}
+                        />
+                        <div className={cls.Navbar__vertical_line}/>
+                        <InfoBox
+                            title={'Наш адрес:'}
+                            desc={'С 8:00 до 19:00 без выходных'}
+                            svgIcon={<ClockIcon className={cls.Navbar__icon}/>}
+                        />
+                    </div>
+                    <InfoBox
+                        title={'Телефон:'}
+                        desc={'+7 (905) 405 65 65'}
+                        svgIcon={<PhoneIcon className={cls.Navbar__icon}/>}
+                    />
+                </div>
+                <div className={cls.Navbar__horizontal_line}/>
+                <div className={cls.Navbar__row}>
+                    <img src={logo} alt="logo"/>
+                    <ul>
+                        <li>Услуги</li>
+                        <li>Наши работы</li>
+                        <li>О магазине</li>
+                        <li>Контакты</li>
+                    </ul>
+                    <button>Позвонить</button>
+                </div>
             </div>
-        </div>
+        </nav>
     );
 };
 
