@@ -1,0 +1,66 @@
+.ServiceCard {
+  position: relative;
+
+  width: 500px;
+  height: 250px;
+  padding: 40px;
+  border-radius: 32px;
+
+  background-color: var(--accent-color);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: var(--primary-text-color);
+
+
+    &__title {
+      max-width: 360px;
+      font: var(--font-m);
+      font-weight: 700;
+      line-height: 140%; //test
+      z-index: 2;
+    }
+
+    &__price {
+      font: var(--font-xs);
+      font-weight: 400;
+      z-index: 2;
+
+      span {
+        font: var(--font-m);
+        font-weight: 500;
+      }
+    }
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 210px;
+    max-width: 350px;
+    border-end-end-radius: 32px;
+    z-index: 1;
+  }
+
+  &__offer {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+    display: inline-flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 40px;
+    background: #FF001D;
+
+    font: var(--font-info);
+    color: var(--accent-text-color);
+  }
+}
