@@ -1,0 +1,34 @@
+.PopularServices {
+  width: 100vw;
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 100px; //temporary
+
+
+  &__title {
+    font: var(--font-l);
+    color: var(--primary-text-color);
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+
+  &__desc {
+    font: var(--font-s);
+    font-weight: 400;
+    color: var(--secondary-text-color);
+    margin-bottom: 48px;
+  }
+
+  &__btn_container {
+    display: flex;
+    justify-content: flex-end;
+
+    margin: 18px 0;
+  }
+}

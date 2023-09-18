@@ -1,7 +1,7 @@
 import {FC} from "react";
 import {classNames} from "shared/lib/classNames";
 import cls from './Hero.module.scss'
-import car from 'shared/assets/icons/car.png'
+import car from 'shared/assets/icons/bmw3.png'
 
 interface HeroProps {
     className?: string;

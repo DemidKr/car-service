@@ -6,6 +6,8 @@ import ClockIcon from "shared/assets/icons/clock.svg";
 import PhoneIcon from "shared/assets/icons/phone.svg";
 import PinIcon from "shared/assets/icons/pin.svg";
 import logo from "shared/assets/icons/logo.png"
+import {ThemeSwitcher} from "shared/ui/ThemeSwitcher";
+import {Button, ThemeButton} from "shared/ui/Button";
 
 interface NavbarProps {
     className?: string;
@@ -46,7 +48,8 @@ export const Navbar: FC<NavbarProps> = (props) => {
                         <li>О магазине</li>
                         <li>Контакты</li>
                     </ul>
-                    <button>Позвонить</button>
+                    <ThemeSwitcher/>
+                    <Button theme={ThemeButton.FULLFILLED}>Позвонить</Button>
                 </div>
             </div>
         </nav>

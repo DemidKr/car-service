@@ -12,4 +12,11 @@
   color: var(--primary-color);
 
   min-height: 100vh;
+  overflow-y: hidden;
+}
+
+.left {
+  display: flex;
+
+  justify-content: flex-end;
 }
