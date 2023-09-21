@@ -3,6 +3,8 @@
 @import "themes/light";
 @import "variables/global";
 @import "fonts/Inter";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 
 .app {
@@ -12,7 +14,7 @@
   color: var(--primary-color);
 
   min-height: 100vh;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .left {
