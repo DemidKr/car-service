@@ -5,7 +5,7 @@ import {InfoBox} from "shared/ui/InfoBox";
 import ClockIcon from "shared/assets/icons/clock.svg";
 import PhoneIcon from "shared/assets/icons/phone.svg";
 import PinIcon from "shared/assets/icons/pin.svg";
-import logo from "shared/assets/icons/logo.png"
+import logo from "shared/assets/icons/darkLogo.png"
 import {ThemeSwitcher} from "shared/ui/ThemeSwitcher";
 import {Button, ThemeButton} from "shared/ui/Button";
 

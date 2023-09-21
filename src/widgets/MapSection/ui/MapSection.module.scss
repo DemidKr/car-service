@@ -22,6 +22,20 @@
 
   &__content {
     width: 50%;
+
+    h2 {
+      font: var(--font-xl);
+      font-weight: 700;
+      color: var(--primary-text-color);
+      margin-top: 96px;
+    }
+
+    div {
+      font: var(--font-s);
+      font-weight: 400;
+      color: var(--secondary-text-color);
+      margin-top: 40px;
+    }
   }
 
   &__map {

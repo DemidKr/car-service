@@ -13,7 +13,12 @@ export const MapSection: FC<MapSectionProps> = (props) => {
     return (
         <div className={classNames(cls.MapSection, {}, [className])}>
             <div className={cls.MapSection__container}>
-                <div className={cls.MapSection__content}><h1>Text</h1></div>
+                <div className={cls.MapSection__content}>
+                    <h2>Где мы?</h2>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</div>
+                </div>
             </div>
             <div className={cls.MapSection__map}>
                 <CustomMap/>
